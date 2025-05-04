@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>HTML:n perusteet -harjoitustyö</h2>
+    <ul>
+      <li><a href="#yleistä">yleistä</a></li>
+      <li><a href="#media">kuvat ja videot</a></li>
+      <li><a href="#listat">listat</a></li>
+      <li><a href="#taulukko">taulukko</a></li>
+      <li><a href="#lomake">lomake</a></li>
+    </ul>
+    <div id="yleistä">
+      <h3>Yleistä:</h3>
+      <p>
+      Tästä tulee minun ensimmäinen kokeiluni täällä Codesandbox:ssa. 
+      Tavoitteenani on oppia HTML:n perusteet. Harjoittelen mm. listojen ja taulukon tekemistä,
+      sekä kuvan, videon, linkkien ja lomakkeiden lisäämistä sivulle.
+      <br /><br />Olen jo oppinut esimerkiksi sen että erillisen
+      break-tagin avulla voidaan vaihtaa riviä / lisätä riviväli.
+      </p>
+    </div>
+    <div id="media">
+      <h3>Kuvat ja videot:</h3>
+      <img src="https://c.pxhere.com/photos/c9/b1/photo-23899.jpg!d" alt="Tietokone,
+      omena, puhelin ja kameran linssinsuojus" width="320" height="230">
+      <video src="https://videos.pexels.com/video-files/2795171/2795171-sd_640_360_25fps.mp4" alt="tietokoneen näppäilyä" width="320" height="240" controls>
+      Videon toistaminen ei onnistu</video>
+    </div>
+    <div id="listat">
+      <h3>Koodaamisen aloittaminen:</h3>
+      <h4>Koodaamiseen tarvitaan:</h4>
+      <ol>
+        <li>tietokone</li>
+        <li>verkkohteys</li>
+        <li>ohjelmointikieli</li>
+        <li>koodieditori</li>
+      </ol>
+      <h4>Koodaajan tärkeitä ominaisuuksia:</h4>
+      <ul>
+        <li>analyyttinen ajattelu</li>
+        <li>kärsivällisyys</li>
+        <li>oppimishalu</li>
+        <li>luovuus</li>
+        <li>huolellisuus</li>
+        <li>yhteistyökyky</li>
+        <li>järjestelmällisyys</li>
+      </ul>
+    </div>
+    <h3>Ohjelmointikieliä:</h3>
+    <table id="taulukko">
+      <thead>
+        <tr>
+          <th scope="col">kieli:</th>
+          <th scope="col">käyttötarkoitus:</th>
+          <th scope="col">linkki Wikipediaan:</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Python</td>
+          <td>yleinen ohjelmointi</td>
+          <td><a href="https://fi.wikipedia.org/wiki/Python_(ohjelmointikieli)" target="_blank">Python</a>
+        </tr>
+          <td>HTML/CSS</td>
+          <td>verkkosivujen<br>rakenne ja ulkoasu</td>
+          <td><a href=https://fi.wikipedia.org/wiki/HTML target="_blank">HTML</a>
+          <a href="https://fi.wikipedia.org/wiki/CSS" target="_blank">CSS</a></td>
+        <tr>
+          <td>JavaScript</td>
+          <td>verkkosivujen<br>interaktiivisuus</td>
+          <td><a href="https://fi.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</td>
+        </tr>
+      </tbody> 
+    </table>
+
+    <form id="lomake">
+      <h3>Ilmoittautuminen koodauskurssille:</h3>
+
+      Valitse kurssi:<br>
+      <input id="python" type="radio" name="kurssi" value="python">
+      <label for="python">Python</label>
+      <input id="html" type="radio" name="kurssi" value="html">
+      <label for="html">HTML/CSS</label>
+      <input id="javascript" type="radio" name="kurssi" value="javascript">
+      <label for="javascript">JavaScript</label><br><br>
+      
+      <label for="nimi">Nimi:</label>
+      <input id="nimi" type="text" name="nimi" placeholder="Kirjoita koko nimesi tähän"><br><br>
+
+      <label for="email">Sähköposti:</label>
+      <input id="email" type="text" name="email"><br><br>
+
+      <laber for="kokemus">Aiempi koodauskokemus:</laber><br>
+      <select id="kokemus" name="kokemus">
+        <option value="ei">Ei aiempaa kokemusta</option>
+        <option value="vahan">Vähän kokemusta</option>
+        <option value="jonkin_verran">Jonkin verran kokemusta</option>
+        <option value="paljon">Paljon kokemusta</option>
+      </select><br><br>
+
+      <input type="submit" value="Lähetä">
+    </form>
+  </body>
+</html>
+
+
